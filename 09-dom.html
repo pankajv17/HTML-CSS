@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <button>Hello</button>
+  <button class="js-btn">Button 2</button>
+
+
+  <script>
+
+    document.querySelector('button'); // get the button elemnt from html to using in js
+    console.log(document.querySelector('button'));//acts as object
+    document.querySelector('.js-btn').innerHTML;
+     console.log(document.querySelector('.js-btn').innerHTML); 
+    document.querySelector('button').innerHTML='NEW';
+    document.querySelector('.js-btn').innerHTML='Changed';
+
+   /* 
+    console.log(document.title);
+    console.log(document.title)
+    document.body.innerHTML='AB D';
+    console.log(document.body);
+    document.title='changed';
+    console.log(document.title);
+    */
+  </script>
+</body>
+</html>

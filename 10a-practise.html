@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practise html,css and js</title>
+  <style>
+   .add-to-cart-button{
+    background-color: rgb(255,216,20);
+    padding: 13px 50px;
+    font-weight: bold;
+    font-size: medium;
+    border: none;
+    border-radius:20px;
+    margin-bottom: 20px;
+   }
+  .request-button{
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 20px;
+  }
+
+  .schedule-button{
+    background-color: rgb(230,230,230);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+    
+  .toggle-button{
+    background-color: rgb(230,230,230);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .is-toggled{
+    background-color: black;
+    color: white;
+  }
+  </style>
+</head>
+<body>
+
+  <button class="add-to-cart-button">Add to Cart</button>
+  <br>
+  <button class="request-button"> Request Now</button> <button class="schedule-button"> Schedule for later</button><br>
+
+ 
+  <button style=" margin-bottom: 20px;" >Test</button>
+
+  <br>
+
+  <button class="toggle-button js-button" onclick=" 
+   toggle();
+  ">
+    Gaming
+  </button>
+
+  <button class="toggle-button js-button" onclick="
+  toggle();
+  "> Music</button>
+  <button class="toggle-button js-button" onclick="
+  toggle();
+  ">Tech</button>
+
+  <script>
+
+  //  let test=(document.querySelector('.js-button'));
+  // console.log(test.classList.contains('js-button'));
+
+  const button = document.querySelector('.js-button');
+  function toggle(){
+  if(!button.classList.contains('is-toggled')){
+   button.classList.add('is-toggled');
+  }else{
+    button.classList.remove('is-toggled');
+  }
+  }
+ 
+  </script>
+</body>
+</html>

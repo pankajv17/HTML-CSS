@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practise Dom</title>
+</head>
+<body>
+
+  <!-- <button  class="js-btn1">9A</button><br>
+  <br>
+   <button class="js-btn2">9B</button> -->
+
+    <button class="headButton" onclick="
+      tossCoin('head');
+    ">Head</button>
+      <button class="tailButton" onclick="
+      tossCoin('tail');
+      ">Tail</button>
+      <p></p>
+
+
+      <!-- 3 -->
+
+    <input type="text" placeholder="Name"  class=" js-input"    " onkeydown="
+    if(event.key === 'Enter'){
+      showName();
+    }"
+    >   
+    <button 
+    onclick="
+       showName();
+    "
+    >Submit</button>
+
+    <p class="js-element"></p>
+
+  <script>
+
+  //  console.log(document.querySelector('button'));
+  //  const btn2=document.querySelector('.js-btn2').innerText='9B done!';
+  //  console.log(btn2);
+
+  // 2 problem
+
+  // console.log(document.querySelector('p').innerText='hey');
+
+   function tossCoin(value){
+  if(value==='head'){
+   document.querySelector('p').innerText=' You Choose : HEAD';
+  } else if(value==='tail'){
+     document.querySelector('p').innerText='You Choose : TAIL';
+  }
+  }
+
+  //3
+
+  // document.querySelector('.js-input');
+  function showName(){
+    let result=document.querySelector('.js-input').value;
+  
+     const inputValue = document.querySelector('.js-element').innerHTML=`Your Name is : ${result} `;
+  }
+
+  </script>
+</body>
+</html>

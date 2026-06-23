@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Practise Functions</title>
+</head>
+<body>
+
+  <script>
+
+//     function greet(name){
+//       console.log(`hello ${name}`);
+//     }
+
+//     greet('ankush');
+//      greet('mansha');
+//       greet('ayush');
+
+// if(!name){
+//   greet();
+//   console.log('hi there')
+// }
+
+//2
+
+  //  function converToFarenhite(degreeCelsius){
+  //    const farenheit=(degreeCelsius*9/5)+32;
+  //    console.log(farenheit);
+  //    return farenheit;
+  //  }
+  //  converToFarenhite(25);
+  
+   
+  //  function converToCelsius(num){
+  //    const celsius=(num-32)*5/9;
+  //    console.log(celsius);
+  //  }
+   
+  //  converToCelsius(86);
+
+  //  function convertToTemprature(degree,unit){
+  //   converToFarenhite(25,'f');
+  //   converToCelsius(86,'c')
+  //     return unit;
+  //  }
+  //   convertToTemprature(25,'c')
+
+
+  //3
+
+  function convertToLength(length,from,to){
+   if (from === 'km' && to === 'miles'){
+      return `${length/1.6}miles`;
+   }else if(from === 'miles' && to === 'km'){
+     return `${length*1.6}km`;
+   }else if(from === to){
+     return `${length} ${to} `;
+   }
+  }
+
+  console.log(convertToLength(50,'miles','km'));
+  console.log(convertToLength(30,'km','miles'));
+  console.log(convertToLength(50,'km','km'));
+
+  </script>
+
+
+  
+</body>
+</html>
